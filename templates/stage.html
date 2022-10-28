@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stage</title>
+</head>
+<body>
+    <form action="{{ url_for('stageIdenty') }}" method="POST">
+        <br>
+        <br>
+        <h3>Gender</h3>
+        <select class="form-select" aria-label="Default select example" name="gender">
+            <option selected >Open this select menu</option>
+            <option value="Female">Female</option>
+            <option value="Male" >Male</option>
+          </select>
+        <br>
+        <h3>Age</h3>
+        <input id="second" name="age"  required="required">
+        <br>
+        <h3>Weight</h3>
+        <input id="third" name="wt" required="required">
+        <br>
+        <h3>cretinine</h3>
+        <input id="fourth" name="cretinine" required="required">
+        <br>
+       
+        <br>
+        <br>
+        <br>
+        <button id="sub" type="submit ">Submit</button>
+    </form>
+</body>
+</html>
